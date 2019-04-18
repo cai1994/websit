@@ -25,23 +25,23 @@ export default {
     return {
       listdata: [
         {
-          imgSrc: require("../../assets/image/images/企业模式.png"),
+          imgSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业模式.png",
           title: "企业模式",
           text:
             "线上美食空间，线下场景交互，AR/VR全息技术，智能机器人无人化餐厅，打造自己的供应链，生态圈。"
         },
         {
-          imgSrc: require("../../assets/image/images/企业理念.png"),
+          imgSrc:"https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业理念.png",
           title: "企业理念",
           text: "不是看得到希望才去坚持，而是坚持了才会看到希望。"
         },
         {
-          imgSrc: require("../../assets/image/images/企业使命.png"),
+          imgSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业使命.png",
           title: "企业使命",
           text: "把客户放在第一位，一切从客户出发。"
         },
         {
-          imgSrc: require("../../assets/image/images/企业愿景.png"),
+          imgSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业愿景.png",
           title: "企业愿景",
           text: "由互联网公司转型到科技类公司"
         }
@@ -66,7 +66,7 @@ export default {
 <style scoped lang="scss">
 .partner {
   height: 100%;
-  background-image: url("../../assets/image/images/关于我们_bk.png");
+  background-image: url("https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/关于我们_bk.png");
   background-repeat: no-repeat;
   background-size: cover;
   .header {
@@ -87,6 +87,7 @@ export default {
     }
   }
   .content {
+    margin-top: 20px;
     .model1,
     .model3 {
       animation: LiMoveRight 3s;
@@ -100,13 +101,14 @@ export default {
       display: block;
       width: 100%;
       position: relative;
-      min-height: 20vh;
+      max-height: 23vh;
+      margin-top: 10px;
       .left {
         width: 120px;
         display: inline-block;
         height: 120px;
         margin: 10px 10px;
-        .leftImg{
+        .leftImg {
           width: 100%;
         }
       }
@@ -121,10 +123,11 @@ export default {
           font-size: 36px;
         }
         span {
+          margin-top: 20px;
           float: left;
           display: inline-block;
           text-align: left;
-          font-size: 28px;
+          font-size: 24px;
         }
       }
     }
@@ -146,5 +149,18 @@ export default {
     left: 0px;
   }
 }
-
+@media only screen and (min-width: 414px) and (max-width: 640px) and (-webkit-device-pixel-ratio: 2) {
+  .partner {
+    .content {
+      li {
+        .right {
+          span {
+            // font-size: 20px;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

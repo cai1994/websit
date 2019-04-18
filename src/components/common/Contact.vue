@@ -7,23 +7,23 @@
             </div>
             <div class="content">
               <div class="imgText">
-                <img src="../../assets/image/images/选菜品.png" class="processImg processImg1" title="选菜品" alt="选菜品">
+                <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/选菜品.png" class="processImg processImg1" title="选菜品" alt="选菜品">
                 <span>选择所需菜品</span>
               </div>
               <div class="arrow">
-                <img class="arrowImg1" src="../../assets/image/images/箭头2.png" alt="箭头图">
-                <img class="arrowImg2" src="../../assets/image/images/箭头1.png" alt="箭头图">
+                <img class="arrowImg1" src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/箭头2.png" alt="箭头图">
+                <img class="arrowImg2" src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/箭头1.png" alt="箭头图">
               </div>
               <div class="imgText">
-                <img src="../../assets/image/images/邀砍价.png" class="processImg processImg2" title="邀砍价" alt="邀砍价">
+                <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/邀砍价.png" class="processImg processImg2" title="邀砍价" alt="邀砍价">
                 <span>邀请好友帮忙砍价</span>
               </div>
               <div class="arrow">
-                <img class="arrowImg1" src="../../assets/image/images/箭头2.png" alt="箭头图">
-                <img class="arrowImg2" src="../../assets/image/images/箭头1.png" alt="箭头图">
+                <img class="arrowImg1" src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/箭头2.png" alt="箭头图">
+                <img class="arrowImg2" src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/箭头1.png" alt="箭头图">
               </div>
               <div class="imgText">
-                <img src="../../assets/image/images/二维码.png" class="processImg processImg3"  title="二维码" alt="二维码">
+                <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/二维码.png" class="processImg processImg3"  title="二维码" alt="二维码">
                 <span>到店出示二维码</span>
               </div>
             </div>
@@ -35,17 +35,17 @@
             </div>
             <div :class="['content',{ animationCss : currentPageFlag}]">
                 <div class="imgText">
-                  <img src="../../assets/image/images/付款参团.png" class="processImg processImg1" title="付款参团" alt="付款参团">
+                  <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/付款参团.png" class="processImg processImg1" title="付款参团" alt="付款参团">
                   <span>付款参团</span>
                 </div>
                 <div class="arrow"></div>
                 <div class="imgText downImgText">
-                  <img src="../../assets/image/images/邀请参团.png" class="processImg processImg2" title="邀请参团" alt="邀请参团">
+                  <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/邀请参团.png" class="processImg processImg2" title="邀请参团" alt="邀请参团">
                   <span>邀请参团</span>
                 </div>
                 <div class="arrow"></div>
                 <div class="imgText">
-                  <img src="../../assets/image/images/拼团成功.png" class="processImg processImg3" title="拼团成功" alt="拼团成功">
+                  <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/拼团成功.png" class="processImg processImg3" title="拼团成功" alt="拼团成功">
                   <span>拼团成功</span>
                 </div>
             </div>
@@ -97,8 +97,9 @@ export default {
   }
   .upDiv {
     width: 100%;
-    height: 50vh;
-    background-image: url("../../assets/image/images/砍价_bk.png");
+    min-height: 48vh;
+    max-height: 50vh;
+    background-image: url("https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/砍价_bk.png");
     background-repeat: no-repeat;
     background-size: cover;
     .content {
@@ -152,7 +153,7 @@ export default {
     .content {
       width: 100%;
       height: calc(100% - 140px);
-      background-image: url("../../assets/image/images/线条.png");
+      background-image: url("https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/线条.png");
       background-repeat: no-repeat;
       background-size: contain;
       position: relative;
@@ -255,7 +256,7 @@ export default {
     .processImg {
       width: 20vw !important;
       height: 20vw !important;
-      top: 0px !important;
+      top: -40px !important;
     }
   }
   .downDiv {

@@ -1,11 +1,11 @@
 <template>
     <div class="Team">
         <div class="header">
-            <p class="titleCN">关于我们</p>
-            <p class="titleEN">About us</p>
+            <p class="titleCN">我们团队</p>
+            <p class="titleEN">Our Team</p>
             <div class="content">
                 <div class="Chairman">
-                    <img src="../../assets/image/images/董事长.png" alt="董事长">
+                    <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/董事长.png" alt="董事长">
                     <p>周明海 | 董事长</p>
                     <span>享七科技天使轮投资方，享七科技董事长</span>
                   <div class="textBox">
@@ -25,12 +25,12 @@
                 </div>
                 </div>
                 <div class="CEO">
-                     <img src="../../assets/image/images/CEO.png" alt="CEO">
+                     <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/CEO.png" alt="CEO">
                     <p>李睿 | CEO</p>
                     <span>武汉市宁波商会常务副会长，享7科技创始人</span>
                 </div>
                 <div class="team">
-                     <img src="../../assets/image/images/团队.png" alt="团队">
+                     <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/团队.png" alt="团队">
                     <p>90后 | 团队</p>
                     <span>要不就和公司一起成为牛人，要不就走人</span>
                     <div class="textBox">
@@ -49,13 +49,14 @@
         </div>
         <div class="footer">
             <div class="left">
-                <p><img src="../../assets/image/images/logo.png" alt="享七logo"><span>027-5972-8176</span></p>
+                <p><img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/logo.png" alt="享七logo"><span>027-5972-8176</span></p>
                 <p>电子邮箱：xiangqi2018boss@163.com</p>
                 <p>公司地址: 武汉市洪山区光谷总部国际Ⅱ期时代</p>
             </div>
             <div class="right">
-                <img src="../../assets/image/images/小程序二维码.png" alt="小程序二维码">
+                <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/小程序二维码.png" alt="小程序二维码">
             </div>
+            <div class="copyright"><p>版权所有：湖北享七网络科技有限公司 鄂ICP备18004677号</p></div>
         </div>
     </div>
 </template>
@@ -72,9 +73,10 @@ export default {
 .Team {
   width: 100%;
   color: #ffffff;
-  height: 100vh;
+  max-height: 100vh;
   .header {
-    background-image: url("../../assets/image/images/团队_bk.png");
+    min-height: 60vh;
+    background-image: url("https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/团队_bk.png");
     background-repeat: no-repeat;
     background-size: Cover;
     padding-top: 60px;
@@ -156,7 +158,7 @@ export default {
             font-size: 18px;
             padding: 20px 20px 0;
             width: 100%;
-            line-height: 20px;
+            line-height: 120%;
             // position: absolute;
             // top: 0px;
             // left: 0px;
@@ -202,13 +204,22 @@ export default {
       right: 18.75%;
       top: 50px;
     }
+    .copyright{
+      position: fixed;
+      right: 5vw;
+      bottom: 0px;
+        text-align: center;
+      p{
+        white-space: nowrap;
+      }
+    }
   }
 }
 @media only screen and(max-width:1400px) {
   .Team {
     .content {
       & > div {
-        width: 30vw;
+        width: 25vw;
         padding-top: 10px !important;
         margin: 10px 5px 0 !important;
         padding-bottom: 0px !important;
@@ -221,23 +232,24 @@ export default {
           font-size: 24px !important;
         }
         span {
-          width: 30vw !important;
+          width: 25vw !important;
           padding: 10px !important;
+          line-height: 120%;
           box-sizing: border-box;
         }
       }
-      .textBox {
-        width: 90vw !important;
-        z-index: 10000;
-        span {
-          width: 100% !important;
-        }
-      }
+      // .textBox {
+      //   width: 90vw !important;
+      //   z-index: 10000;
+      //   span {
+      //     width: 100% !important;
+      //   }
+      // }
     }
     .footer {
       .left {
         left: 10px !important;
-        right: 80px !important;
+        right: 60px !important;
         top: 10px !important;
         p {
           margin-bottom: 5px !important;
@@ -255,7 +267,24 @@ export default {
 @media only screen and(min-width:1200px) and(-webkit-device-pixel-ratio: 3) {
   .Team {
     .content {
-      & > div {
+       & > div {
+        width: 30vw;
+        padding-top: 10px !important;
+        margin: 10px 5px 0 !important;
+        padding-bottom: 0px !important;
+        img {
+          width: 20vw;
+          margin-bottom: 20px;
+        }
+        p {
+          margin-bottom: 5px !important;
+          font-size: 24px !important;
+        }
+        span {
+          width: 30vw !important;
+          padding: 10px !important;
+          box-sizing: border-box;
+        }
       }
     }
     .footer {

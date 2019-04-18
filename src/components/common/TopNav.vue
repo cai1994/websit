@@ -1,6 +1,6 @@
 <template>
     <div class="topNav" :style="{backgroundColor: navColorFlag ? '':'#2E2E2E'}">
-        <a href="#HomePage"><img src="../../assets/image/images/logo.png" alt="享7科技" title="享7科技"></a>
+        <a href="#HomePage"><img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/logo.png" alt="享7科技" title="享7科技"></a>
         <ul class="rightNav" >
             <li v-for="(item ,index) in navList" :key="index" @click="ToNav(item.name)"><p class="box2">{{item.text}}</p></li>
         </ul>
@@ -195,6 +195,9 @@ export default {
       top: 60%;
       height: 35px;
       transform: translate(-50%, -50%);
+      img{
+        width: 150%;
+      }
     }
     .rightNav {
       display: none;

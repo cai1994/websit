@@ -28,7 +28,7 @@ export default {
   height: 100%;
   padding-top: 38vh;
   position: relative;
-  background-image: url("../../assets/image/images/bk.png");
+  background-image: url("https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/bk.png");
   background-repeat: no-repeat;
   background-size: cover;
   > .homeTitle {
@@ -37,10 +37,14 @@ export default {
     color: #fdfdfd;
     line-height: 200px;
     width: 32vw;
+    max-width:500px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
+    h1{
+      letter-spacing: 10px;
+    }
     > p {
       width: 1Px;
       height: 25vh;
@@ -96,7 +100,7 @@ export default {
       border: 1px solid #2ddffc;
     }
     .iconMore {
-      background-image: url("../../assets/image/images/hover-more.png");
+      background-image: url("https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/hover-more.png");
       background-repeat: no-repeat;
     }
   }
@@ -115,7 +119,7 @@ export default {
     width: 20px;
     height: 26px;
     margin-left: 20px;
-    background-image: url("../../assets/image/images/more.png");
+    background-image: url("https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/more.png");
     background-repeat: no-repeat;
   }
 }
@@ -133,6 +137,7 @@ export default {
     > .homeTitle {
       font-size: 50px;
       line-height: 90px;
+      width:50vw;
       > p {
       width: 1px;
       height: 12vh;
@@ -146,7 +151,7 @@ export default {
 @media only screen and (max-width: 768px) {
   .homePage {
     > .homeTitle {
-      width:50vw;
+      width:60vw !important;
     }
   }
 }

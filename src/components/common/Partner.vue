@@ -6,7 +6,7 @@
         </div>
         <div class="content">
             <div class="imgBox">
-                <img src="../../assets/image/images/地图.png" alt="地图">
+                <img src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/地图.png" alt="地图">
                 <div class='circle wuhan'>
                     <div class='circle1'>&nbsp;</div>
                     <div class='circle2'>&nbsp;</div>

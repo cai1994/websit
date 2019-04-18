@@ -8,7 +8,7 @@
         <div class="ball2"></div>
         <div class="ball3"></div>
         <div class="leftPhone">
-            <img class="phongImg" src="../../assets/image/images/iphone.png" alt="phone">
+            <img class="phongImg" src="https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/iphone.png" alt="phone">
             <swiper class="swiper" ref="myPhoneSwiper" :options="swiperOption" >
                 <swiper-slide v-for="(num ,index ) in phoneImgarrs" :key="index">
                     <img class="bgImg" :src="num.slideSrc">
@@ -33,12 +33,12 @@ export default {
   data() {
     return {
       phoneImgarrs: [
-        { slideSrc: require("../../assets/image/images/01.png") },
-        { slideSrc: require("../../assets/image/images/02.png") },
-        { slideSrc: require("../../assets/image/images/03.png") },
-        { slideSrc: require("../../assets/image/images/04.png") },
-        { slideSrc: require("../../assets/image/images/05.png") },
-        { slideSrc: require("../../assets/image/images/06.png") }
+        { slideSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/01.png"},
+        { slideSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/02.png" },
+        { slideSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/03.png" },
+        { slideSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/04.png"},
+        { slideSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/05.png"},
+        { slideSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/06.png" }
       ],
       swiperOption: {
         autoplay: true
@@ -129,15 +129,14 @@ export default {
     position: absolute;
     bottom: 130px;
     left: 200px;
-    width: 500px;
-    max-width: 360px;
+    max-width: 320px;
     .phongImg {
       width: 100%;
       height: auto;
     }
     .swiper {
       position: absolute;
-      top: 10px;
+      top: 0px;
       left: 24px;
       width: calc(100% - 46px);
       padding: 80px 0px 50px 0px;
@@ -278,10 +277,10 @@ export default {
   }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .phonebg {
     .leftPhone {
-      bottom: 130px;
+      bottom: 190px;
       left: 15px;
       width: 300px;
       .phongImg {
@@ -324,11 +323,11 @@ export default {
     }
     .footer {
       width: 100%;
-      height: 130px;
+      height: 190px;
       position: absolute;
       bottom: 0px;
       .salesVolume {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 37px;
         color: #ffffff;
       }

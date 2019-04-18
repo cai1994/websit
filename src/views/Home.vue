@@ -2,25 +2,25 @@
   <div class="fullpage-container">
     <TopNav/>
     <full-page ref="fullpage" :options="options" id="fullpage">
-      <div class="section" data-anchor="HomePage">
+      <div class="section" >
        <HomePage/>
       </div>
-      <div class="section" data-anchor="ProductService">
+      <div class="section" >
         <ProductService/>
       </div>
-      <div class="section" data-anchor="ProductSescription">
+      <div class="section" >
         <ProductSescription/>
       </div>
-      <div class="section" data-anchor="Contact">
+      <div class="section" >
         <Contact/>
       </div>
-      <div class="section" data-anchor="Partner">
+      <div class="section" >
         <Partner/>
       </div>
-       <div class="section" data-anchor="AboutUs">
+       <div class="section">
         <AboutUs/>
       </div>
-      <div class="section" data-anchor="OurTeam">
+      <div class="section" >
         <OurTeam/>
       </div>
     </full-page>
@@ -47,15 +47,24 @@ export default {
         scrollBar: false,
         menu: "#menu",
         // navigation: true,
-        // anchors: ['page1', 'page2', 'page3'],
+        anchors: [
+          "HomePage",
+          "ProductService",
+          "ProductSescription",
+          "Contact",
+          "Partner",
+          "AboutUs",
+          "OurTeam"
+        ],
+
         sectionsColor: [
           "#fff",
           "#fff",
           "#2e2e2e",
-          "#fec401",
+          "#2e2e2e",
           "#fff",
           "#000000",
-          "#000000",
+          "#000000"
         ],
         licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"
       }
@@ -70,8 +79,6 @@ export default {
     TopNav,
     AboutUs,
     OurTeam
-  },
-  mounted(){
   }
 };
 </script>

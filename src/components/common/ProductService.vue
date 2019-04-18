@@ -34,35 +34,35 @@ export default {
     return {
       imgarrs: [
         {
-          slideSrc: require("../../assets/image/images/slideimg-1.png"),
-          IconSrc: require("../../assets/image/images/slideIcon-1.png"),
+          slideSrc:"https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideimg-1.png",
+          IconSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideIcon-1.png",
           txt:
             "用户可通过享7购小程序购买红包贺卡，并编辑红包祝福语，赠送给一个或多个好友。",
           name: "红包贺卡"
         },
         {
-          slideSrc: require("../../assets/image/images/slideimg-2.png"),
-          IconSrc: require("../../assets/image/images/slideIcon-2.png"),
+          slideSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideimg-2.png",
+          IconSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideIcon-2.png",
           txt: "用户可在60分钟内邀请好友砍价并成功，可以最终价获得商品。",
           name: "邀请砍价"
         },
         {
-          slideSrc: require("../../assets/image/images/slideimg-3.png"),
-          IconSrc: require("../../assets/image/images/slideIcon-3.png"),
+          slideSrc:"https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideimg-3.png",
+          IconSrc:"https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideIcon-3.png",
           txt:
             "选择拼团商品，付款参与拼团，分享给未注册“享7购”好友注册后，则参团成功，在有效期内达到拼团人数，则拼团成功。",
-          name: "全名拼团"
+          name: "全民拼团"
         },
         {
-          slideSrc: require("../../assets/image/images/slideimg-4.png"),
-          IconSrc: require("../../assets/image/images/slideIcon-4.png"),
+          slideSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideimg-4.png",
+          IconSrc:"https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideIcon-4.png",
           txt:
-            "用户在享7购小程序购买享7券，到店支付即可当现金使用，优惠多多，最高立减100元。",
+            "用户在享7购小程序购买享7券，到店支付即可当现金使用，优惠多多，最高立减100元",
           name: "享七券票"
         },
         {
-          slideSrc: require("../../assets/image/images/slideimg-5.png"),
-          IconSrc: require("../../assets/image/images/slideIcon-5.png"),
+          slideSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideimg-5.png",
+          IconSrc:"https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/slideIcon-5.png",
           txt:
             "秒杀商品均限量发售，用户需在60分钟内邀请2个新用户注册，超时则需重新发起。",
           name: "限时秒杀"
@@ -126,7 +126,7 @@ export default {
             },
             //当宽度大于等于1024
             1125: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 0
             }
           });
@@ -173,6 +173,10 @@ export default {
         }
         .textBox {
           top: 0;
+          span{
+            color: #fff;
+            line-height: 150%;
+          }
         }
       }
     }
@@ -255,7 +259,7 @@ export default {
     .bgImg {
       background-size: cover;
       width: 100%;
-      height: 600px !important;
+      max-height: 650px !important;
     }
   }
 }
