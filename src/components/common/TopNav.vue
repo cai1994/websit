@@ -24,10 +24,10 @@ export default {
     };
   },
   watch: {
-    "$route.fullPath"(newval, oldval) {
+    "$route.hash"(newval, oldval) {
       if (
-        newval == "/#ProductService" ||
-        this.$route.fullPath == "/#Partner"
+        newval.indexOf("#ProductService") != -1 ||
+        newval.indexOf("#Partner") != -1
       ) {
         this.navColorFlag = false; //第二屏导航变色
       } else {
@@ -37,8 +37,8 @@ export default {
   },
   mounted() {
     if (
-      this.$route.fullPath == "/#ProductService" ||
-      this.$route.fullPath == "/#Partner"
+      this.$route.hash.indexOf("#ProductService") != -1 ||
+      this.$route.hash.indexOf("#Partner") != -1
     ) {
       this.navColorFlag = false;
     } else {
@@ -195,7 +195,7 @@ export default {
       top: 60%;
       height: 35px;
       transform: translate(-50%, -50%);
-      img{
+      img {
         width: 150%;
       }
     }

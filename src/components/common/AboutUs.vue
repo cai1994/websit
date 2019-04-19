@@ -25,23 +25,27 @@ export default {
     return {
       listdata: [
         {
-          imgSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业模式.png",
+          imgSrc:
+            "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业模式.png",
           title: "企业模式",
           text:
             "线上美食空间，线下场景交互，AR/VR全息技术，智能机器人无人化餐厅，打造自己的供应链，生态圈。"
         },
         {
-          imgSrc:"https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业理念.png",
+          imgSrc:
+            "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业理念.png",
           title: "企业理念",
           text: "不是看得到希望才去坚持，而是坚持了才会看到希望。"
         },
         {
-          imgSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业使命.png",
+          imgSrc:
+            "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业使命.png",
           title: "企业使命",
           text: "把客户放在第一位，一切从客户出发。"
         },
         {
-          imgSrc: "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业愿景.png",
+          imgSrc:
+            "https://xq-1256079679.cos.ap-shanghai.myqcloud.com/official/企业愿景.png",
           title: "企业愿景",
           text: "由互联网公司转型到科技类公司"
         }
@@ -50,8 +54,8 @@ export default {
     };
   },
   watch: {
-    "$route.fullPath"(newval, oldval) {
-      if (newval === "/#AboutUs") {
+    "$route.hash"(newval, oldval) {
+      if (newval.indexOf("#AboutUs") != -1) {
         this.currentPageFlag = true; //页面至当前组件赋予动画样式
       } else {
         this.currentPageFlag = false;
@@ -155,7 +159,6 @@ export default {
       li {
         .right {
           span {
-            // font-size: 20px;
             display: none;
           }
         }

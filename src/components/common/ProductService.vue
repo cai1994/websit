@@ -174,7 +174,6 @@ export default {
         .textBox {
           top: 0;
           span{
-            color: #fff;
             line-height: 150%;
           }
         }
@@ -219,6 +218,7 @@ export default {
       font-size: 25px;
       transition: all 1s;
       span {
+        color: #ffffff;
         padding: 20px 20px 0;
         width: 100%;
         height: 100%;
@@ -230,7 +230,7 @@ export default {
         letter-spacing: 3px;
       }
     }
-  }
+  } 
   .footer {
     padding-top: 26px;
     span {

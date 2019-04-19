@@ -60,8 +60,8 @@ export default {
     };
   },
   watch: {
-    "$route.fullPath"(newval, oldval) {
-      if (newval === "/#Contact") {
+    "$route.hash"(newval, oldval) {
+      if (newval.indexOf("#Contact") != -1) {
         this.currentPageFlag = true; //页面至当前组件赋予动画样式
       } else {
         this.currentPageFlag = false;
@@ -249,8 +249,8 @@ export default {
   }
 }
 @media only screen and(-webkit-device-pixel-ratio: 3) {
-  .upDiv{
-     .imgText{
+  .upDiv {
+    .imgText {
       width: 20vw !important;
     }
     .processImg {
@@ -260,7 +260,7 @@ export default {
     }
   }
   .downDiv {
-    .imgText{
+    .imgText {
       width: 20vw !important;
     }
     .processImg {

@@ -15,10 +15,10 @@
 </template>
 <script>
 export default {
-  data(){
+  data() {
     return {
-      words:["XIANG QI","WELCOME"]
-    }
+      words: ["XIANG QI", "WELCOME"]
+    };
   }
 };
 </script>
@@ -37,16 +37,16 @@ export default {
     color: #fdfdfd;
     line-height: 200px;
     width: 32vw;
-    max-width:500px;
+    max-width: 500px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    h1{
+    h1 {
       letter-spacing: 10px;
     }
     > p {
-      width: 1Px;
+      width: 1px;
       height: 25vh;
       position: absolute;
       background-color: #fff;
@@ -59,7 +59,7 @@ export default {
     .topBorder {
       top: 0;
       left: -50px;
-      height: 1Px;
+      height: 1px;
       width: 38vw;
       animation: leftMoveBorder 2s 1;
     }
@@ -71,7 +71,7 @@ export default {
     .bottomBorder {
       bottom: 0;
       right: -50px;
-      height: 1Px;
+      height: 1px;
       width: 30vw;
       animation: rightMoveBorder 2s 1;
     }
@@ -137,13 +137,13 @@ export default {
     > .homeTitle {
       font-size: 50px;
       line-height: 90px;
-      width:50vw;
+      width: 50vw;
       > p {
-      width: 1px;
-      height: 12vh;
-      position: absolute;
-      background-color: #fff;
-    }
+        width: 1px;
+        height: 12vh;
+        position: absolute;
+        background-color: #fff;
+      }
     }
   }
 }
@@ -151,7 +151,7 @@ export default {
 @media only screen and (max-width: 768px) {
   .homePage {
     > .homeTitle {
-      width:60vw !important;
+      width: 60vw !important;
     }
   }
 }

@@ -153,6 +153,7 @@ export default {
           background-color: #fc5e2d;
           top: 100%;
           transition: all 3s;
+          z-index: 1000;
           span {
             color: #ffffff;
             font-size: 18px;
@@ -205,12 +206,13 @@ export default {
       top: 50px;
     }
     .copyright{
+      width: 100%;
       position: fixed;
-      right: 5vw;
       bottom: 0px;
-        text-align: center;
+      text-align: center;
       p{
         white-space: nowrap;
+        margin: 10px 0;
       }
     }
   }
@@ -278,12 +280,19 @@ export default {
         }
         p {
           margin-bottom: 5px !important;
-          font-size: 24px !important;
+          font-size: 18px !important;
         }
         span {
           width: 30vw !important;
           padding: 10px !important;
           box-sizing: border-box;
+        }
+      }
+      .textBox {
+        width: 90vw !important;
+        z-index: 10000;
+        span {
+          width: 100% !important;
         }
       }
     }
